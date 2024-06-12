@@ -63,7 +63,7 @@ jobs:
       # test gh CA
       - name: gh api
         env:
-            GH_TOKEN: ${{ github.token }}
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh api \
             -H "Accept: application/vnd.github+json" \
