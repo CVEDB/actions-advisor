@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: cvedb/actions-advisor@main
       
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       # Docker build or pull needs CA fixup?
       - run: |
